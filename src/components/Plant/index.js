@@ -1,6 +1,7 @@
 import { Card, Col, Row } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../../store/actions/cartAction";
+import StarRatings from "react-star-ratings";
 
 const Plant = ({ imageUrl }) => {
 	const { data } = useSelector((state) => state.cartReducer);
@@ -40,28 +41,62 @@ const Plant = ({ imageUrl }) => {
 						alt={plant.title}
 						src={plant.imageUrl}
 					/>
-					<div
-						style={{
-							position: "absolute",
-							bottom: "-20px",
-							right: "10px",
-							zIndex: "2",
-							fontSize: "18px",
-							cursor: "pointer",
-							width: "40px",
-							height: "40px",
-							lineHeight: "42px",
-							background: "white",
-							borderRadius: "50%",
-							textAlign: "center",
-						}}
-						className="border"
-					>
-						<i className="bi bi-heart-fill text-danger"></i>
-					</div>
+
+					{plant.isInLike ? (
+						<div
+							style={{
+								position: "absolute",
+								bottom: "-20px",
+								right: "10px",
+								zIndex: "2",
+								fontSize: "18px",
+								cursor: "pointer",
+								width: "38px",
+								height: "38px",
+								lineHeight: "42px",
+								background: "white",
+								borderRadius: "50%",
+								textAlign: "center",
+							}}
+							className="border-0 shadow-sm"
+						>
+							<i className="bi bi-heart-fill text-danger"></i>
+						</div>
+					) : (
+						<div
+							style={{
+								position: "absolute",
+								bottom: "-20px",
+								right: "10px",
+								zIndex: "2",
+								fontSize: "18px",
+								cursor: "pointer",
+								width: "38px",
+								height: "38px",
+								lineHeight: "42px",
+								background: "white",
+								borderRadius: "50%",
+								textAlign: "center",
+							}}
+							className="border-0 shadow-sm"
+						>
+							<i className="bi bi-heart text-danger"></i>
+						</div>
+					)}
 				</div>
 				<Card.Body className="px-lg-4 pb-lg-4">
 					<div className="title">{plant.title}</div>
+
+					<span>
+						<StarRatings
+							rating={plant.rating}
+							starRatedColor="#fcad03"
+							starDimension="16px"
+							starSpacing="0px"
+							numberOfStars={5}
+							name="rating"
+						/>
+					</span>
 					<div className="d-flex justify-content-between mt-3">
 						<div>
 							<div

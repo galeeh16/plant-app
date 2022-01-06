@@ -62,14 +62,14 @@ const Header = () => {
 								></i>
 								{totalItem && totalItem > 0 ? (
 									<span
-										className="bg-danger rounded-circle text-white"
+										className="bg-danger rounded-circle text-white shadow-sm"
 										style={{
 											fontSize: "8px",
 											display: "inline-block",
 											padding: "2px",
 											width: "14px",
 											height: "14px",
-											lineHeight: "13px",
+											lineHeight: "12px",
 											position: "absolute",
 											bottom: "0px",
 											left: "10px",

@@ -1,4 +1,4 @@
-import { Header } from "./components";
+import { Footer, Header } from "./components";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 
@@ -14,6 +14,8 @@ export default function App() {
 				<Route path="/blogs" element={<Blog />} />
 				<Route path="/plant-recipe" element={<PlantRecipe />} />
 			</Routes>
+
+			<Footer />
 		</>
 	);
 }

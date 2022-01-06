@@ -11,7 +11,7 @@ html,
 body {
 	font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
-	color: #292929 !important;
+	color: #323232 !important;
 	background-color: #faf9fc !important;
 	font-size: 0.9rem;
 }
@@ -74,13 +74,13 @@ h3 {
 }
 
 .btn-outline-dark {
-	border-color: #d7ded8 !important;
-	background-color: #d7ded8 !important;
+	border-color: #e2f5d5 !important;
+	background-color: #ebfde0 !important;
 }
 
 .btn-outline-dark:hover {
 	color: inherit !important;
-	background-color: #b5c1b7 !important;
+	background-color: #e2f5d5 !important;
 }
 
 .card {
