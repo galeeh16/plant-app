@@ -29,7 +29,7 @@ const Header = () => {
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
 				<Navbar.Collapse id="responsive-navbar-nav">
-					<Nav className="me-auto d-flex" style={{ gap: "2.5rem" }}>
+					{/* <Nav className="me-auto d-flex" style={{ gap: "2.5rem" }}>
 						<LinkContainer to="/">
 							<Nav.Link className="py-4 nav-link ms-lg-5">
 								Shop
@@ -43,7 +43,7 @@ const Header = () => {
 								Plant Recipe
 							</Nav.Link>
 						</LinkContainer>
-					</Nav>
+					</Nav> */}
 
 					<Nav
 						className="d-flex align-items-center ms-auto"
