@@ -107,18 +107,37 @@ input.form-control::placeholder,
 	color: #e5e2e2 !important;
 }
 
-.box-shadow-inset {
-	box-shadow: -1px -11px 34px 1px rgba(0, 0, 0, 0.71) inset;
-	-webkit-box-shadow: -1px -11px 34px 1px rgba(0, 0, 0, 0.71) inset;
-	-moz-box-shadow: -1px -11px 34px 1px rgba(0, 0, 0, 0.71) inset;
-}
-
 div.shadow-sm {
 	box-shadow: 0 16px 40px rgba(162, 154, 169, 0.2) !important;
+}
+
+.box-plant {
+	border: 1px solid #e5e2e2;
+	background-color: white;
 }
 
 .box-container {
 	display: flex;
 	width: 100%;
 	box-sizing: border-box;
+}
+
+/* the slides */
+.plant-slider .slick-slide {
+	margin-left: 27px;
+}
+
+/* the parent */
+.plant-slider .slick-list {
+	margin-left: -27px;
+}
+
+/* biar margin kiri normal */
+.plant-slider {
+	margin-left: 27px;
+}
+
+.plant-slider .slick-track {
+	/* transform: translate3d(0px, 0px, 0px); */
+	padding-bottom: 4rem;
 }
